@@ -55,7 +55,7 @@ export class Validator extends Component{
                     sum += element.clientWidth
                 })
 
-                if (((widthSpawn - (allElements.length * sum)) > 50)) {
+                if (((widthSpawn - ((allElements.length * sum) / 2)) > 0)) {
                     this.$spawn.insertAdjacentHTML('beforeend', HTMLInfo)
                 }else {
                     let dataName = this.$spawn.dataset[this.$dataName]
